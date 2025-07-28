@@ -1,0 +1,18 @@
+networks:
+    internal:
+        driver: bridge
+        ipam:
+            config:
+                - subnet: 174.30.0.0/16
+
+services:
+    documentation:
+        image: ${REGISTRY_NAMESPACE}:${DOCKER_TAG}
+        command: [ "pnpm", "run", "start" ]
+        build:
+            context: ./
+            dockerfile: ./documentation/Dockerfile
+        networks:
+            - internal
+        volumes:
+            - ./documentation/phrasea:/srv/workspace/documentation/phrasea
