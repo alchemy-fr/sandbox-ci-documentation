@@ -17,7 +17,7 @@ npx create-docusaurus@3.8.1 --typescript --package-manager pnpm phrasea docusaur
 
 cd phrasea
 # bump to 3.8
-pnpm i react@18 react-dom@18  @docusaurus/core@3.8.1 @docusaurus/preset-classic@3.8.1 @docusaurus/theme-common@3.8.1
+pnpm i react@18 react-dom@18 @docusaurus/core@3.8.1 @docusaurus/preset-classic@3.8.1 @docusaurus/theme-common@3.8.1 @docusaurus/plugin-content-docs@3.8.1
 pnpm build
 
 pnpm run serve
@@ -33,9 +33,12 @@ pnpm dedupe
 ```
 
 ### set config for search
-`/docusaurus.config.ts`
-```json
-...
+
+```typescript
+// docusaurus.config.ts
+
+const config: Config = {
+    ...
     plugins: [
         ...,
         // add parsing
@@ -46,15 +49,19 @@ pnpm dedupe
             }
         ]
     ],
-...
+    ...
+};
 ```
 
 ## add i18n
 ### set config
-`/docusaurus.config.ts`
-```json
-...
-    // add i18 settings
+
+```typescript
+// docusaurus.config.ts
+
+const config: Config = {
+    ...
+    // ------ add i18 settings
     i18n: {
         defaultLocale: 'en',
         locales: ['en', 'fr'],
@@ -81,7 +88,7 @@ pnpm dedupe
         navbar: {
             items: [
                 ...,
-                // add locale dropdown select
+                // ------ add locale dropdown select
                 {
                     type: 'localeDropdown',
                     position: 'left',
@@ -90,8 +97,8 @@ pnpm dedupe
         },
     },
     ...
+};
 ```
-
 ### translate md files
 
 a (incomplete) mirror of `docs/*` must be translated to `i18n/{locale}/docusaurus-plugin-content-docs/current`
@@ -103,15 +110,101 @@ cp docs/intro.md i18n/fr/docusaurus-plugin-content-docs/current/
 ```
 translate `i18n/fr/docusaurus-plugin-content-docs/current/intro.md` 
 ```shell
-pnpm build
+pnpm run build
 ```
 
 
+## add phrasea databox api
 
+### generate the schema from phrasea dev container
 
+```shell
+cd databox/api
+sf app:documentation:dump
+```
+==> the file is generated to `<phrasea>/doc/Databox/Api/schema.json`, copy/paste it here as `databox_api_schema.xml`
 
+### declare the api, add to navbar
+```typescript
+// docusaurus.config.ts
 
+const config: Config = {
+    ...
+    themeConfig:
+    {
+        ...,
+        navbar: {
+            ...,
+            items: [
+                ...,
+                // ------ add
+                {
+                    label: "Databox API",
+                    position: "left",
+                    to: "/docs/category/databox-api",
+                },
+                ...,
+            ],
+        },
+    },
+    ...
+    plugins: [
+        [
+            "docusaurus-plugin-openapi-docs",
+            {
+                id: "openapi",
+                docsPluginId: "classic",
+                config: {
+                    petstore: {...} satisfies OpenApiPlugin.Options,
+                    // ----------- add
+                    databox: {
+                        specPath: "databox_api_schema.json",
+                        outputDir: "docs/databox_api",
+                        sidebarOptions: {
+                            groupPathsBy: "tag",
+                            categoryLinkSource: "tag",
+                        },
+                    } satisfies OpenApiPlugin.Options,
+                } satisfies Plugin.PluginOptions,
+            }
+        ],
+        ...
+    ],
+    ...
+};
+```
 
+- generate the `*.mdx` and the `sidebar.ts` files to `docs/databox_api`
+```shell
+# "databox" = key in config (one can use "all")
+pnpm run gen-api-docs databox
+```
+
+### add the sidebar
+```typescript
+// sidebars.ts
+
+const sidebars: SidebarsConfig = {
+    ...,
+    openApiSidebar: [
+        ...,
+        // ------ add
+        {
+            type: "category",
+            label: "Databox API",
+            link: {
+                type: "generated-index",
+                title: "Phrasea Databox API",
+                description:
+                    "This is the Phrasea Databox API.",
+                slug: "/category/databox-api"
+            },
+            items: require("./docs/databox_api/sidebar.ts")
+        },
+        ...
+    ]
+};
+```
 
 pnpm i @docusaurus/core@latest @docusaurus/preset-classic@latest @docusaurus/theme-common@latest
 
