@@ -1,6 +1,6 @@
 name: export-doc
 
-on: [push, realease]
+on: [push, release]
 
 jobs:
   build:
