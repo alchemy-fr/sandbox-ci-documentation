@@ -63,7 +63,7 @@ jobs:
 
 
       - name: Upload Release Asset
-        uses: svenstaro/upload-release-action@v2.9.0 # Use the upload-release-action
+        uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: ${{ github.workspace }}/result.zip
