@@ -1,6 +1,8 @@
 name: export-doc
 
-on: [push, release]
+on:
+  release:
+    types: [created]
 
 jobs:
   build:
@@ -54,8 +56,17 @@ jobs:
           recursive: true
 
 # check/see if zip is successfully created
-      - uses: actions/upload-artifact@v4
+      # - uses: actions/upload-artifact@v4
+      #   with:
+      #     name: my-result-zip
+      #     path: ${{ github.workspace }}/result.zip   
+
+
+      - name: Upload Release Asset
+        uses: svenstaro/upload-release-action@v2.9.0 # Use the upload-release-action
         with:
-          name: my-result-zip
-          path: ${{ github.workspace }}/result.zip    
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: ${{ github.workspace }}/result.zip
+          asset_name: phrasea-doc.zip
+          tag: ${{ github.ref }}  
         
