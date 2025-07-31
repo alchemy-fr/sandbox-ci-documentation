@@ -54,7 +54,7 @@ jobs:
           recursive: true
 
 # check/see if zip is successfully created
-      - uses: actions/upload-artifact@v1.1
+      - uses: actions/upload-artifact@v4
         with:
           name: my-result-zip
           path: ${{ github.workspace }}/result.zip    
