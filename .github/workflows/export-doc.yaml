@@ -45,3 +45,17 @@ jobs:
       - name: export doc
         run: |
           docker compose exec -T fake-phrasea sh -c "php databox/application.php app:export-md"
+
+      - name: zip directory
+        uses: vimtor/action-zip@v1.2
+        with:
+          files: generatedDoc/
+          dest: result.zip
+          recursive: true
+
+# check/see if zip is successfully created
+      - uses: actions/upload-artifact@v1.1
+        with:
+          name: my-result-zip
+          path: ${{ github.workspace }}/result.zip    
+        
