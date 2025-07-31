@@ -38,6 +38,10 @@ jobs:
       - name: Start services
         run: docker compose up -d fake-phrasea --wait
 
+      - name: install dependencies
+        run: |  
+          docker compose exec -T fake-phrasea su app sh -c "cd databox && composer install"
+
       - name: export doc
         run: |
           docker compose exec -T fake-phrasea su app sh -c "php databox/application.php app:export-md"
