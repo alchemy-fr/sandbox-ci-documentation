@@ -36,7 +36,7 @@ jobs:
       #     compose-file: docker-compose.yml
 
       - name: Start services
-        run: docker compose up -d --wait
+        run: docker compose up -d fake-phrasea --wait
 
       - name: export doc
         run: |
