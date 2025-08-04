@@ -12,7 +12,7 @@ class ExportMdFileCommand extends Command
 {
     public function __invoke(): int
     {
-        echo "Exporting Markdown file\n";
+        echo "Generating Markdown file\n";
 
         $filesystem = new Filesystem();
 

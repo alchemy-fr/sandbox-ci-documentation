@@ -25,7 +25,7 @@ services:
         build:
             target: fake-phrasea
             context: ./
-            dockerfile: ./documentation/Dockerfile
+            dockerfile: ./phrasea/databox/api/Dockerfile
         networks:
             - internal
         volumes:
