@@ -17,7 +17,7 @@ npx create-docusaurus@3.8.1 --typescript --package-manager pnpm phrasea docusaur
 
 cd phrasea
 # bump to 3.8
-pnpm i react@18 react-dom@18 @docusaurus/core@3.8.1 @docusaurus/preset-classic@3.8.1 @docusaurus/theme-common@3.8.1 @docusaurus/plugin-content-docs@3.8.1
+pnpm i react@18 react-dom@18 @docusaurus/core@3.8.1 @docusaurus/preset-classic@3.8.1 @docusaurus/theme-common@3.8.1 @docusaurus/plugin-content-docs@3.8.1 @docusaurus/types@3.8.1
 pnpm build
 
 pnpm run serve
@@ -116,6 +116,8 @@ pnpm run build
 
 ## add phrasea databox api
 
+https://github.com/PaloAltoNetworks/docusaurus-openapi-docs
+
 ### generate the schema from phrasea dev container
 
 ```shell
@@ -174,7 +176,7 @@ const config: Config = {
 };
 ```
 
-- generate the `*.mdx` and the `sidebar.ts` files to `docs/databox_api`
+### generate the `*.mdx` and the `sidebar.ts` files to `docs/databox_api`
 ```shell
 # "databox" = key in config (one can use "all")
 pnpm run gen-api-docs databox
@@ -202,7 +204,7 @@ const sidebars: SidebarsConfig = {
             items: require("./docs/databox_api/sidebar.ts")
         },
         ...
-    ]
+    ],
 };
 ```
 
