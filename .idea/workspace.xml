@@ -4,309 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0b5481c-2aa3-49c7-ab70-9acfd6876bd6" name="Changes" comment="wip">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sandbox-ci-documentation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sandbox-ci-documentation.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/SUPPORT.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/blog/2019-05-28-first-blog-post.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/blog/2019-05-29-long-blog-post.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/blog/2021-08-01-mdx-blog-post.mdx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/blog/2021-08-26-welcome/docusaurus-plushie-banner.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/blog/2021-08-26-welcome/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/blog/authors.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/docs/intro.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/docs/tutorial-basics/_category_.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/docs/tutorial-basics/congratulations.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/docs/tutorial-basics/create-a-blog-post.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/docs/tutorial-basics/create-a-document.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/docs/tutorial-basics/create-a-page.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/docs/tutorial-basics/deploy-your-site.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/docs/tutorial-basics/markdown-features.mdx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/docs/tutorial-extras/_category_.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/docs/tutorial-extras/manage-docs-versions.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/docs/tutorial-extras/translate-your-site.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/docusaurus.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/examples/petstore.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/i18n/fr/docusaurus-plugin-content-docs/current/intro.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/pnpm-lock.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/sidebars.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/src/components/HomepageFeatures/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/src/components/HomepageFeatures/styles.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/src/css/custom.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/src/pages/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/src/pages/index.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/src/pages/markdown-page.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/static/.nojekyll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/static/img/docusaurus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/static/img/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/static/img/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/static/img/tutorial/docsVersionDropdown.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/static/img/tutorial/localeDropdown.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/static/img/undraw_docusaurus_mountain.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/static/img/undraw_docusaurus_react.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/phrasea/static/img/undraw_docusaurus_tree.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/Command/ExportMdFileCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/databox/api/Command/ExportMdFileCommand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/databox/api/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/application.php" beforeDir="false" afterPath="$PROJECT_DIR$/databox/api/application.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/databox/api/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/databox/api/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/mdFile/databox.md" beforeDir="false" afterPath="$PROJECT_DIR$/databox/api/mdFile/databox.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/mdFile/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/databox/api/mdFile/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/mdFile/setup.md" beforeDir="false" afterPath="$PROJECT_DIR$/databox/api/mdFile/setup.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/autoload.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/composer/ClassLoader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/composer/InstalledVersions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/composer/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/composer/autoload_classmap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/composer/autoload_files.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/composer/autoload_namespaces.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/composer/autoload_psr4.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/composer/autoload_real.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/composer/autoload_static.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/composer/installed.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/composer/installed.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/composer/platform_check.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/psr/container/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/psr/container/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/psr/container/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/psr/container/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/psr/container/src/ContainerExceptionInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/psr/container/src/ContainerInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/psr/container/src/NotFoundExceptionInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Application.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Attribute/Argument.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Attribute/AsCommand.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Attribute/Option.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/CI/GithubActionReporter.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Color.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Command/Command.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Command/CompleteCommand.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Command/DumpCompletionCommand.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Command/HelpCommand.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Command/InvokableCommand.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Command/LazyCommand.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Command/ListCommand.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Command/LockableTrait.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Command/SignalableCommandInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Command/TraceableCommand.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/CommandLoader/CommandLoaderInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/CommandLoader/ContainerCommandLoader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/CommandLoader/FactoryCommandLoader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Completion/CompletionInput.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Completion/CompletionSuggestions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Completion/Output/BashCompletionOutput.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Completion/Output/CompletionOutputInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Completion/Output/FishCompletionOutput.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Completion/Output/ZshCompletionOutput.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Completion/Suggestion.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/ConsoleEvents.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Cursor.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/DataCollector/CommandDataCollector.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Debug/CliRequest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/DependencyInjection/AddConsoleCommandPass.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Descriptor/ApplicationDescription.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Descriptor/Descriptor.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Descriptor/DescriptorInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Descriptor/JsonDescriptor.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Descriptor/MarkdownDescriptor.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Descriptor/ReStructuredTextDescriptor.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Descriptor/TextDescriptor.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Descriptor/XmlDescriptor.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Event/ConsoleAlarmEvent.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Event/ConsoleCommandEvent.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Event/ConsoleErrorEvent.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Event/ConsoleEvent.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Event/ConsoleSignalEvent.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Event/ConsoleTerminateEvent.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/EventListener/ErrorListener.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Exception/CommandNotFoundException.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Exception/ExceptionInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Exception/InvalidArgumentException.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Exception/InvalidOptionException.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Exception/LogicException.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Exception/MissingInputException.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Exception/NamespaceNotFoundException.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Exception/RunCommandFailedException.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Exception/RuntimeException.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Formatter/NullOutputFormatter.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Formatter/NullOutputFormatterStyle.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Formatter/OutputFormatter.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Formatter/OutputFormatterInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Formatter/OutputFormatterStyle.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Formatter/OutputFormatterStyleInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Formatter/OutputFormatterStyleStack.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Formatter/WrappableOutputFormatterInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Helper/DebugFormatterHelper.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Helper/DescriptorHelper.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Helper/Dumper.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Helper/FormatterHelper.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Helper/Helper.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Helper/HelperInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Helper/HelperSet.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Helper/InputAwareHelper.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Helper/OutputWrapper.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Helper/ProcessHelper.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Helper/ProgressBar.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Helper/ProgressIndicator.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Helper/QuestionHelper.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Helper/SymfonyQuestionHelper.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Helper/Table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Helper/TableCell.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Helper/TableCellStyle.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Helper/TableRows.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Helper/TableSeparator.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Helper/TableStyle.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Helper/TreeHelper.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Helper/TreeNode.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Helper/TreeStyle.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Input/ArgvInput.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Input/ArrayInput.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Input/Input.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Input/InputArgument.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Input/InputAwareInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Input/InputDefinition.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Input/InputInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Input/InputOption.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Input/StreamableInputInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Input/StringInput.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Logger/ConsoleLogger.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Messenger/RunCommandContext.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Messenger/RunCommandMessage.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Messenger/RunCommandMessageHandler.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Output/AnsiColorMode.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Output/BufferedOutput.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Output/ConsoleOutput.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Output/ConsoleOutputInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Output/ConsoleSectionOutput.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Output/NullOutput.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Output/Output.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Output/OutputInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Output/StreamOutput.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Output/TrimmedBufferOutput.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Question/ChoiceQuestion.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Question/ConfirmationQuestion.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Question/Question.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Resources/bin/hiddeninput.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Resources/completion.bash" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Resources/completion.fish" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Resources/completion.zsh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/SignalRegistry/SignalMap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/SignalRegistry/SignalRegistry.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/SingleCommandApplication.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Style/OutputStyle.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Style/StyleInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Style/SymfonyStyle.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Terminal.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Tester/ApplicationTester.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Tester/CommandCompletionTester.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Tester/CommandTester.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Tester/Constraint/CommandIsSuccessful.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/Tester/TesterTrait.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/console/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/deprecation-contracts/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/deprecation-contracts/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/deprecation-contracts/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/deprecation-contracts/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/deprecation-contracts/function.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/filesystem/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/filesystem/Exception/ExceptionInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/filesystem/Exception/FileNotFoundException.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/filesystem/Exception/IOException.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/filesystem/Exception/IOExceptionInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/filesystem/Exception/InvalidArgumentException.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/filesystem/Exception/RuntimeException.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/filesystem/Filesystem.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/filesystem/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/filesystem/Path.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/filesystem/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/filesystem/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/polyfill-ctype/Ctype.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/polyfill-ctype/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/polyfill-ctype/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/polyfill-ctype/bootstrap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/polyfill-ctype/bootstrap80.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/polyfill-ctype/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/polyfill-intl-grapheme/Grapheme.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/polyfill-intl-grapheme/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/polyfill-intl-grapheme/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/polyfill-intl-grapheme/bootstrap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/polyfill-intl-grapheme/bootstrap80.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/polyfill-intl-grapheme/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/polyfill-intl-normalizer/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/polyfill-intl-normalizer/Normalizer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/polyfill-intl-normalizer/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/polyfill-intl-normalizer/Resources/unidata/canonicalComposition.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/polyfill-intl-normalizer/Resources/unidata/canonicalDecomposition.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/polyfill-intl-normalizer/Resources/unidata/combiningClass.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/polyfill-intl-normalizer/Resources/unidata/compatibilityDecomposition.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/polyfill-intl-normalizer/bootstrap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/polyfill-intl-normalizer/bootstrap80.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/polyfill-intl-normalizer/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/polyfill-mbstring/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/polyfill-mbstring/Mbstring.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/polyfill-mbstring/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/polyfill-mbstring/Resources/unidata/caseFolding.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/polyfill-mbstring/Resources/unidata/lowerCase.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/polyfill-mbstring/Resources/unidata/titleCaseRegexp.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/polyfill-mbstring/Resources/unidata/upperCase.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/polyfill-mbstring/bootstrap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/polyfill-mbstring/bootstrap80.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/polyfill-mbstring/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/service-contracts/Attribute/Required.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/service-contracts/Attribute/SubscribedService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/service-contracts/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/service-contracts/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/service-contracts/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/service-contracts/ResetInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/service-contracts/ServiceCollectionInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/service-contracts/ServiceLocatorTrait.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/service-contracts/ServiceMethodsSubscriberTrait.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/service-contracts/ServiceProviderInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/service-contracts/ServiceSubscriberInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/service-contracts/ServiceSubscriberTrait.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/service-contracts/Test/ServiceLocatorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/service-contracts/Test/ServiceLocatorTestCase.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/service-contracts/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/string/AbstractString.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/string/AbstractUnicodeString.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/string/ByteString.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/string/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/string/CodePointString.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/string/Exception/ExceptionInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/string/Exception/InvalidArgumentException.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/string/Exception/RuntimeException.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/string/Inflector/EnglishInflector.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/string/Inflector/FrenchInflector.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/string/Inflector/InflectorInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/string/Inflector/SpanishInflector.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/string/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/string/LazyString.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/string/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/string/Resources/data/wcswidth_table_wide.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/string/Resources/data/wcswidth_table_zero.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/string/Resources/functions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/string/Slugger/AsciiSlugger.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/string/Slugger/SluggerInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/string/TruncateMode.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/string/UnicodeString.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/databox/api/vendor/symfony/string/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phrasea/doc/setup.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/setup.md" afterDir="false" />
-    </list>
+    <list default="true" id="a0b5481c-2aa3-49c7-ab70-9acfd6876bd6" name="Changes" comment="clean" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -416,7 +114,23 @@
       <option name="project" value="LOCAL" />
       <updated>1754303255038</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="remove pseudo-repo &quot;documentation&quot; (moved to phrasea-documentation builder) ; move `databox/api` to / to mimic phrasea">
+      <option name="closed" value="true" />
+      <created>1754338983854</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1754338983854</updated>
+    </task>
+    <task id="LOCAL-00007" summary="clean">
+      <option name="closed" value="true" />
+      <created>1754339044203</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1754339044203</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -429,6 +143,8 @@
     <MESSAGE value="docker" />
     <MESSAGE value="cleanup wip" />
     <MESSAGE value="wip" />
-    <option name="LAST_COMMIT_MESSAGE" value="wip" />
+    <MESSAGE value="remove pseudo-repo &quot;documentation&quot; (moved to phrasea-documentation builder) ; move `databox/api` to / to mimic phrasea" />
+    <MESSAGE value="clean" />
+    <option name="LAST_COMMIT_MESSAGE" value="clean" />
   </component>
 </project>
