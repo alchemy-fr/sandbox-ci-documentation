@@ -6,26 +6,12 @@ networks:
                 - subnet: 174.30.0.0/16
 
 services:
-    documentation:
-        image: ${REGISTRY_NAMESPACE}:${DOCKER_TAG}
-        command: [ "pnpm", "run", "serve" ]
-        build:
-            context: ./
-            dockerfile: ./documentation/Dockerfile
-        networks:
-            - internal
-        ports:
-            - "3077:3000"
-
-#        volumes:
-#            - ./documentation/phrasea:/srv/workspace/documentation/phrasea
-
     fake-phrasea:
         image: alchemyfr/fake-phrasea:${DOCKER_TAG}
         build:
             target: fake-phrasea
             context: ./
-            dockerfile: ./phrasea/databox/api/Dockerfile
+            dockerfile: ./databox/api/Dockerfile
         networks:
             - internal
         volumes:
