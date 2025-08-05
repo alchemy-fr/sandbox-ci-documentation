@@ -9,6 +9,6 @@ RUN composer config --global process-timeout 2000 \
     && adduser -D -u 1000 app \
     && printf "\nuser = app\ngroup = app\n" >> /usr/local/etc/php-fpm.d/zz-docker.conf
 
-WORKDIR /srv/app/phrasea
+WORKDIR /srv/app
 
 CMD ["php-fpm"]

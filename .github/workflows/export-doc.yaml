@@ -46,12 +46,12 @@ jobs:
 
       - name: export doc
         run: |
-          docker compose exec -T fake-phrasea sh -c "php databox/application.php app:export-md"
+          docker compose exec -T fake-phrasea sh -c "php databox/api/application.php app:documentation:dump"
 
       - name: zip directory
         uses: vimtor/action-zip@v1.2
         with:
-          files: generatedDoc/
+          files: doc/
           dest: result.zip
           recursive: true
 
@@ -69,4 +69,3 @@ jobs:
           file: ${{ github.workspace }}/result.zip
           asset_name: phrasea-doc.zip
           tag: ${{ github.ref }}  
-        

@@ -4,7 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0b5481c-2aa3-49c7-ab70-9acfd6876bd6" name="Changes" comment="clean" />
+    <list default="true" id="a0b5481c-2aa3-49c7-ab70-9acfd6876bd6" name="Changes" comment="fix readme">
+      <change afterPath="$PROJECT_DIR$/databox/api/mdFile/Databox/Api/schema.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/databox/api/mdFile/Databox/Attributes/initial_attribute_values.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/databox/api/mdFile/Databox/Renditions/rendition_factory.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Databox/Indexer/databox-indexer.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Databox/permissions.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Developement/_locales.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Developement/dev.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Developement/postgre-migration.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Developement/xdebug-php-storm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Developement/xdebug.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Infra/Storage/_locales.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Infra/Storage/cloudfront.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Infra/Storage/s3.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Infra/_locales.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Infra/backup-restore.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Infra/infra-operating-tasks.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Infra/minikube.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Infra/networks.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/export-doc.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/export-doc.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/databox/api/Command/ExportMdFileCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/databox/api/Command/DocumentationDumperCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/databox/api/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/databox/api/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/databox/api/application.php" beforeDir="false" afterPath="$PROJECT_DIR$/databox/api/application.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/databox/api/mdFile/databox.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/databox/api/mdFile/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/databox/api/mdFile/setup.md" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +57,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/jyg/workspace/sandbox-ci-documentation",
+    "last_opened_file_path": "/home/jyg/workspace/sandbox-ci-documentation/databox/api/mdFile",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -43,18 +70,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/phrasea" />
-      <recent name="$PROJECT_DIR$/documentation/phrasea/i18n/fr/docusaurus-plugin-content-docs/current/phrasea" />
-      <recent name="$PROJECT_DIR$/documentation/phrasea/docs" />
-      <recent name="$PROJECT_DIR$/documentation" />
-      <recent name="$PROJECT_DIR$/doc" />
+      <recent name="$PROJECT_DIR$/databox/api/mdFile" />
+      <recent name="$PROJECT_DIR$/doc/Databox" />
+      <recent name="$PROJECT_DIR$/doc/Infra" />
+      <recent name="$PROJECT_DIR$/doc/Developement" />
+      <recent name="$PROJECT_DIR$/doc/Databox/Indexer" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/doc/Databox" />
       <recent name="$PROJECT_DIR$/doc/generatedDoc" />
       <recent name="$PROJECT_DIR$/phrasea/databox/api" />
       <recent name="$PROJECT_DIR$/documentation/phrasea" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/documentation" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -130,7 +157,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754339044203</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fix readme">
+      <option name="closed" value="true" />
+      <created>1754339213483</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1754339213483</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +180,7 @@
     <MESSAGE value="wip" />
     <MESSAGE value="remove pseudo-repo &quot;documentation&quot; (moved to phrasea-documentation builder) ; move `databox/api` to / to mimic phrasea" />
     <MESSAGE value="clean" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean" />
+    <MESSAGE value="fix readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix readme" />
   </component>
 </project>

@@ -7,16 +7,16 @@ use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Attribute\AsCommand;
 
-#[AsCommand(name: 'app:export-md')]
-class ExportMdFileCommand extends Command
+#[AsCommand(name: 'app:documentation:dump')]
+class DocumentationDumperCommand extends Command
 {
     public function __invoke(): int
     {
-        echo "Generating Markdown file\n";
+        echo "Generating Markdown files\n";
 
         $filesystem = new Filesystem();
 
-        $destination = Path::join(__DIR__, '../../../doc/generatedDoc');
+        $destination = Path::join(__DIR__, '../../../doc/_generatedDoc');
         $filesystem->mkdir($destination);
 
         $filesystem->mirror(Path::join(__DIR__, '../mdFile'), $destination);
