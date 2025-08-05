@@ -42,7 +42,7 @@ jobs:
 
       - name: install dependencies
         run: |  
-          docker compose exec -T fake-phrasea sh -c "cd databox && composer install"
+          docker compose exec -T fake-phrasea sh -c "cd databox/api && composer install"
 
       - name: export doc
         run: |
