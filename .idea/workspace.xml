@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="a0b5481c-2aa3-49c7-ab70-9acfd6876bd6" name="Changes" comment="fix ?">
       <change beforePath="$PROJECT_DIR$/.github/workflows/export-doc.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/export-doc.yaml" afterDir="false" />
+=======
+    <list default="true" id="a0b5481c-2aa3-49c7-ab70-9acfd6876bd6" name="Changes" comment="wip">
+>>>>>>> Stashed changes
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,6 +121,7 @@
       <option name="project" value="LOCAL" />
       <updated>1754303255038</updated>
     </task>
+<<<<<<< Updated upstream
     <task id="LOCAL-00006" summary="remove pseudo-repo &quot;documentation&quot; (moved to phrasea-documentation builder) ; move `databox/api` to / to mimic phrasea">
       <option name="closed" value="true" />
       <created>1754338983854</created>
@@ -174,6 +179,9 @@
       <updated>1754379643913</updated>
     </task>
     <option name="localTasksCounter" value="13" />
+=======
+    <option name="localTasksCounter" value="6" />
+>>>>>>> Stashed changes
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
