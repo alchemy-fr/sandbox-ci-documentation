@@ -3,6 +3,9 @@ name: export-doc
 on:
   release:
     types: [created]
+  push:
+    branches:
+      - '**'
 
 jobs:
   setup:
@@ -12,11 +15,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # - name: Setup Docker Compose
-      #   uses: docker/compose-action@v2
-      #   with:
-      #     compose-file: docker-compose.yml
-
       - name: Start services
         run: docker compose up -d fake-phrasea --wait
 
@@ -25,17 +23,19 @@ jobs:
           docker compose exec -T fake-phrasea sh -c "cd databox/api && composer install"
 
       - name: export doc
+        if: github.event_name == 'release' && github.event.action == 'created'
         run: |
           docker compose exec -T fake-phrasea sh -c "php databox/api/application.php app:documentation:dump"
 
       - name: zip directory
+        if: github.event_name == 'release' && github.event.action == 'created'
         uses: vimtor/action-zip@v1.2
         with:
           files: doc/
           dest: result.zip
           recursive: true
 
-# check/see if zip is successfully created
+# check/see if zip is successfully created , can find on push to test
       # - uses: actions/upload-artifact@v4
       #   with:
       #     name: my-result-zip
@@ -43,6 +43,7 @@ jobs:
 
 
       - name: Upload Release Asset
+        if: github.event_name == 'release' && github.event.action == 'created'
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
