@@ -9,3 +9,8 @@
 
 4. Si je choisis la Preview publique:
 ![Texte alternatif](https://api-databox.ps-demo.alchemy.phrasea.io/s/6ef289b5-4df0-4093-8f6c-a3d7c522f68b/r/d304c1aa-c6a9-45af-8786-b2f6ecd115a6?token=PHDKdwdKcNHPALxJEk4ub4XTuhouNEkmTvfoqKkZRn7uxA85Xp94E4SjM5TfHGd2)
+
+
+UPLOADER AVEC PHRASEA
+
+![Upload avec Phrasea](https://api-databox.ps-demo.alchemy.phrasea.io/s/a782d666-08eb-4977-9a03-9e54241e47b3/r/d304c1aa-c6a9-45af-8786-b2f6ecd115a6?token=P3Vb1791JTgRk5sUS4QpjqA25ajJkvekEJycU2BRGrwkWbfzCSFV2EvdcicAnNGr)
