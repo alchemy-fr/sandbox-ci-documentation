@@ -8,6 +8,8 @@
 
 Phrasea est une solution de Digital Asset Management (DAM) développée par Alchemy, éditeur français basé à Paris, expert du DAM depuis le début des années 90\. Conçue comme l’évolution de Phraseanet (lancée en 2005), Phrasea est une solution DAM robuste, moderne et complète, entièrement réécrite pour répondre aux enjeux actuels de gestion des médias numériques.
 
+![Affichage des résultats](https://api-databox.ps-demo.alchemy.phrasea.io/s/aa1ae748-11d8-4fb7-a79e-59743b1afcd3/r/d304c1aa-c6a9-45af-8786-b2f6ecd115a6?token=qDHk4BqxuZSmxL1ybaJz2u1dXomi6VT3QC513FnJ4AmkayAguRntLDiafdXD8Eqi)
+
 Open Source, elle est une alternative souveraine aux plateformes propriétaires pour garantir transparence et indépendance.
 
 API-first, hautement scalable, Phrasea est disponible en mode SaaS, On-premise, et en mode hybride.
