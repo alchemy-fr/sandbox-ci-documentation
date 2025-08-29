@@ -36,10 +36,10 @@ jobs:
           recursive: true
 
 # check/see if zip is successfully created , can find on push to test
-      # - uses: actions/upload-artifact@v4
-      #   with:
-      #     name: my-result-zip
-      #     path: ${{ github.workspace }}/result.zip   
+#       - uses: actions/upload-artifact@v4
+#         with:
+#           name: my-result-zip
+#           path: ${{ github.workspace }}/result.zip   
 
 
       - name: Upload Release Asset
@@ -50,3 +50,18 @@ jobs:
           file: ${{ github.workspace }}/result.zip
           asset_name: phrasea-doc.zip
           tag: ${{ github.ref }}  
+
+      - name: Trigger Workflow in documentation builder Repository
+        run: |
+          # Set the required variables
+          repo_owner="alchemy-fr" 
+          repo_name="phrasea-documentation-builder"  
+          event_type="trigger-workflow"
+  
+          curl -L \
+            -X POST \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer ${{ secrets.PAT }}" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            https://api.github.com/repos/$repo_owner/$repo_name/dispatches \
+            -d "{\"event_type\": \"$event_type\"}"
