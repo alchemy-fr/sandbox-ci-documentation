@@ -12,20 +12,6 @@ jobs:
     name: setup
     runs-on: ubuntu-latest
     steps:
-#      - name: Checkout repository
-#        uses: actions/checkout@v4
-#
-#      - name: Start services
-#        run: docker compose up -d fake-phrasea --wait
-#
-#      - name: install dependencies
-#        run: |
-#          docker compose exec -T fake-phrasea sh -c "cd databox/api && composer install"
-
-#      - name: export doc
-#        if: github.event_name == 'release' && github.event.action == 'created'
-#        run: |
-#          docker compose exec -T fake-phrasea sh -c "php databox/api/application.php app:documentation:dump"
 
 #      - name: zip directory
 #        if: github.event_name == 'release' && github.event.action == 'created'
@@ -55,6 +41,18 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 30
+
+      - name: Start services
+        run: docker compose up -d fake-phrasea --wait
+
+      - name: install dependencies
+        run: |
+          docker compose exec -T fake-phrasea sh -c "cd databox/api && composer install"
+
+      - name: export doc
+        if: github.event_name == 'release' && github.event.action == 'created'
+        run: |
+          docker compose exec -T fake-phrasea sh -c "php databox/api/application.php app:documentation:dump"
 
       - uses: docker/setup-qemu-action@v2
       - uses: docker/setup-buildx-action@v2
