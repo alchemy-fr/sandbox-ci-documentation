@@ -12,6 +12,8 @@ RUN composer config --global process-timeout 2000 \
 COPY --chown=app:app . /srv/app
 WORKDIR /srv/app
 
+RUN composer install
+
 RUN ls -al
 
 RUN ["php", "databox/api/application.php", "app:documentation:dump" ]

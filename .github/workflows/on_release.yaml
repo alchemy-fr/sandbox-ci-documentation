@@ -45,9 +45,9 @@ jobs:
       - name: Start services
         run: docker compose up -d fake-phrasea --wait
 
-      - name: install dependencies
-        run: |
-          docker compose exec -T fake-phrasea sh -c "cd databox/api && composer install"
+#      - name: install dependencies
+#        run: |
+#          docker compose exec -T fake-phrasea sh -c "cd databox/api && composer install"
 
       - name: export doc
         if: github.event_name == 'release' && github.event.action == 'created'
