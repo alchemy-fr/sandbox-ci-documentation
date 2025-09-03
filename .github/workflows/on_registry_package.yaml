@@ -1,0 +1,52 @@
+name: export-doc
+
+on:
+  registry_package:
+    types: [ published ]
+env:
+  REGISTRY_NAMESPACE: ghcr.io/${{ github.repository_owner }}
+  IMAGE_REGISTRY: ghcr.io/${{ github.repository_owner }}
+  PACKAGE_ID: ${{ github.event.registry_package.id }}
+
+jobs:
+  setup:
+    name: setup
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 30
+
+      - name: Start services
+        run: docker compose up -d fake-phrasea --wait
+
+      - name: export doc
+        run: |
+          docker compose exec -T fake-phrasea sh -c "php databox/api/application.php app:documentation:dump"
+
+      - uses: docker/setup-qemu-action@v2
+      - uses: docker/setup-buildx-action@v2
+
+      - name: Log in to the Container registry
+        uses: docker/login-action@v2
+        with:
+          registry: ${{ env.IMAGE_REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Trigger Workflow in documentation builder Repository
+        run: |
+          # Set the required variables
+          repo_owner="alchemy-fr" 
+          repo_name="phrasea-documentation-builder"  
+          event_type="trigger-workflow"
+          
+          curl -L \
+            -X POST \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer ${{ secrets.PAT }}" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            https://api.github.com/repos/$repo_owner/$repo_name/dispatches \
+            -d "{\"event_type\": \"$event_type\",\"client_payload\": {\"PHRASEA_TAG\": \"${{ github.event.registry_package.id }}\"}}"
