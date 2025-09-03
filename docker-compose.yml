@@ -14,5 +14,5 @@ services:
             dockerfile: ./databox/api/Dockerfile
         networks:
             - internal
-        volumes:
-            - ./:/srv/app
+#        volumes:
+#            - ./:/srv/app

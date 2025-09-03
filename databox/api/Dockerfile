@@ -9,6 +9,11 @@ RUN composer config --global process-timeout 2000 \
     && adduser -D -u 1000 app \
     && printf "\nuser = app\ngroup = app\n" >> /usr/local/etc/php-fpm.d/zz-docker.conf
 
+COPY --chown=app:app . /srv/app
 WORKDIR /srv/app
+
+RUN ls -al
+
+RUN ["php", "databox/api/application.php", "app:documentation:dump" ]
 
 CMD ["php-fpm"]
