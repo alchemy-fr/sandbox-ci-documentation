@@ -10,11 +10,12 @@ RUN composer config --global process-timeout 2000 \
     && printf "\nuser = app\ngroup = app\n" >> /usr/local/etc/php-fpm.d/zz-docker.conf
 
 COPY --chown=app:app . /srv/app
-WORKDIR /srv/app
+WORKDIR /srv/app/databox/api
 
 RUN composer install
 
 RUN ls -al
+WORKDIR /srv/app
 
 RUN ["php", "databox/api/application.php", "app:documentation:dump" ]
 
