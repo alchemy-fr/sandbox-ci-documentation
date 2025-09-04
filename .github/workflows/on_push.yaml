@@ -7,13 +7,6 @@ on:
 #      - master
 
 jobs:
-  build_databox_api:
-    name: 'Build Databox API'
-    uses: ./.github/workflows/build_api.yaml
-    with:
-      context: ./databox/api
-    secrets: inherit
-
   setup:
     name: setup
     runs-on: ubuntu-latest
