@@ -5,6 +5,9 @@ on:
     # Sequence of patterns matched against refs/heads
 #    branches:
 #      - master
+env:
+  REGISTRY_NAMESPACE: ghcr.io/${{ github.repository_owner }}
+  IMAGE_REGISTRY: ghcr.io/${{ github.repository_owner }}
 
 jobs:
   setup:
@@ -22,37 +25,37 @@ jobs:
           echo "github.event.release.tag_name = ${{ github.event.release.tag_name }}"
           echo "env.REGISTRY_NAMESPACE = ${{ env.REGISTRY_NAMESPACE }}"
 
-#      - name: Checkout repository
-#        uses: actions/checkout@v4
-#
-#      - name: Start services
-#        run: docker compose up -d fake-phrasea --wait
-#
-#      - name: install dependencies
-#        run: |
-#          docker compose exec -T fake-phrasea sh -c "cd databox/api && composer install"
-#
-#      - name: export doc
-#        run: |
-#          docker compose exec -T fake-phrasea sh -c "php databox/api/application.php app:documentation:dump"
-#
-#      - name: Build and Push image
-#        uses: docker/build-push-action@v6
-#        with:
-#          context: ./
-#          file: ./databox/api/Dockerfile
-#          provenance: false
-#          push: true
-#          tags: |
-#            ${{ env.REGISTRY_NAMESPACE }}/fake-phrasea:${{ github.ref_name }}
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-#
-#      - name: Trigger Workflow in documentation builder Repository
-#        run: |
-#          # Set the required variables
-#          repo_owner="alchemy-fr"
-#          repo_name="phrasea-documentation-builder"
-#          event_type="trigger-workflow"
+      - name: Start services
+        run: docker compose up -d fake-phrasea --wait
+
+      - name: install dependencies
+        run: |
+          docker compose exec -T fake-phrasea sh -c "cd databox/api && composer install"
+
+      - name: export doc
+        run: |
+          docker compose exec -T fake-phrasea sh -c "php databox/api/application.php app:documentation:dump"
+
+      - name: Build and Push image
+        uses: docker/build-push-action@v6
+        with:
+          context: ./
+          file: ./databox/api/Dockerfile
+          provenance: false
+          push: true
+          tags: |
+            ${{ env.REGISTRY_NAMESPACE }}/fake-phrasea:${{ github.ref_name }}
+
+
+      - name: Trigger Workflow in documentation builder Repository
+        run: |
+          # Set the required variables
+          repo_owner="alchemy-fr"
+          repo_name="phrasea-documentation-builder"
+          event_type="trigger-workflow"
 #
 #          curl -L \
 #            -X POST \
