@@ -14,9 +14,10 @@ jobs:
     steps:
       - name: test
         run: |
+          echo "===== on_release.yaml ====="
           echo "github.ref = ${{ github.ref }}"
           echo "github.sha = ${{ github.sha }}"
           echo "github.ref_name = ${{ github.ref_name }}"
           echo "github.repository = ${{ github.repository }}"
-          echo "github.github.event.release.tag_name = ${{ github.github.event.release.tag_name }}"
+          echo "github.event.release.tag_name = ${{ github.event.release.tag_name }}"
           echo "env.REGISTRY_NAMESPACE = ${{ env.REGISTRY_NAMESPACE }}"
