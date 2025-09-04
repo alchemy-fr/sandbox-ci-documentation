@@ -1,6 +1,6 @@
 # syntax=docker.io/docker/dockerfile:1
 
-FROM php:8.3.11-fpm-alpine3.20 as fake-phrasea
+FROM php:8.3.11-fpm-alpine3.20 AS fake-phrasea
 RUN apk add --no-interactive bash nano
 
 COPY --from=composer:2.5.8 /usr/bin/composer /usr/bin/composer

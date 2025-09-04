@@ -12,7 +12,7 @@ jobs:
     name: setup
     runs-on: ubuntu-latest
     steps:
-      - name: test
+      - name: Dump vars
         run: |
           echo "===== on_release.yaml ====="
           echo "github.ref = ${{ github.ref }}"
@@ -20,4 +20,5 @@ jobs:
           echo "github.ref_name = ${{ github.ref_name }}"
           echo "github.repository = ${{ github.repository }}"
           echo "github.event.release.tag_name = ${{ github.event.release.tag_name }}"
+          echo "env.REGISTRY = ${{ env.REGISTRY }}"
           echo "env.REGISTRY_NAMESPACE = ${{ env.REGISTRY_NAMESPACE }}"
