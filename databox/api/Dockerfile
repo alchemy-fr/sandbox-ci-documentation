@@ -17,6 +17,6 @@ RUN composer install
 RUN ls -al
 WORKDIR /srv/app
 
-RUN ["php", "databox/api/application.php", "app:documentation:dump" ]
+# RUN ["php", "databox/api/application.php", "app:documentation:dump" ]
 
 CMD ["php-fpm"]

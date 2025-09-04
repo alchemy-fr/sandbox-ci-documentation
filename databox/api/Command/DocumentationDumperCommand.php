@@ -21,6 +21,8 @@ class DocumentationDumperCommand extends Command
 
         $filesystem->mirror(Path::join(__DIR__, '../mdFile'), $destination);
 
+        file_put_contents(Path::join($destination, 'STAMP.md'), date(DATE_ATOM));
+
         return Command::SUCCESS;
     }
 
