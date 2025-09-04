@@ -32,6 +32,17 @@ jobs:
       - name: export doc
         run: |
           docker compose exec -T fake-phrasea sh -c "php databox/api/application.php app:documentation:dump"
+
+      - name: Build and Push image
+        uses: docker/build-push-action@v6
+        with:
+          context: ./
+          file: ./databox/api/Dockerfile
+          provenance: false
+          push: true
+          tags: |
+            ${{ env.REGISTRY_NAMESPACE }}/fake-phrasea:${{ github.event.release.tag_name }}
+
 #
 #      - name: Trigger Workflow in documentation builder Repository
 #        run: |
