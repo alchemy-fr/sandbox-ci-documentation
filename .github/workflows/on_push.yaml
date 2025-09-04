@@ -41,7 +41,7 @@ jobs:
           provenance: false
           push: true
           tags: |
-            ${{ env.REGISTRY_NAMESPACE }}/fake-phrasea:${{ github.event.release.tag_name }}
+            ${{ env.REGISTRY_NAMESPACE }}/fake-phrasea:${{ github.ref_name }}
 
 #
 #      - name: Trigger Workflow in documentation builder Repository
