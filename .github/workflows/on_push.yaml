@@ -18,30 +18,32 @@ jobs:
           echo "github.sha = ${{ github.sha }}"
           echo "github.ref_name = ${{ github.ref_name }}"
           echo "github.repository = ${{ github.repository }}"
+          echo "github.github.event.release.tag_name = ${{ github.github.event.release.tag_name }}"
+          echo "env.REGISTRY_NAMESPACE = ${{ env.REGISTRY_NAMESPACE }}"
 
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Start services
-        run: docker compose up -d fake-phrasea --wait
-
-      - name: install dependencies
-        run: |
-          docker compose exec -T fake-phrasea sh -c "cd databox/api && composer install"
-
-      - name: export doc
-        run: |
-          docker compose exec -T fake-phrasea sh -c "php databox/api/application.php app:documentation:dump"
-
-      - name: Build and Push image
-        uses: docker/build-push-action@v6
-        with:
-          context: ./
-          file: ./databox/api/Dockerfile
-          provenance: false
-          push: true
-          tags: |
-            ${{ env.REGISTRY_NAMESPACE }}/fake-phrasea:${{ github.ref_name }}
+#      - name: Checkout repository
+#        uses: actions/checkout@v4
+#
+#      - name: Start services
+#        run: docker compose up -d fake-phrasea --wait
+#
+#      - name: install dependencies
+#        run: |
+#          docker compose exec -T fake-phrasea sh -c "cd databox/api && composer install"
+#
+#      - name: export doc
+#        run: |
+#          docker compose exec -T fake-phrasea sh -c "php databox/api/application.php app:documentation:dump"
+#
+#      - name: Build and Push image
+#        uses: docker/build-push-action@v6
+#        with:
+#          context: ./
+#          file: ./databox/api/Dockerfile
+#          provenance: false
+#          push: true
+#          tags: |
+#            ${{ env.REGISTRY_NAMESPACE }}/fake-phrasea:${{ github.ref_name }}
 
 #
 #      - name: Trigger Workflow in documentation builder Repository
