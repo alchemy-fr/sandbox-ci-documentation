@@ -7,7 +7,7 @@ networks:
 
 services:
     fake-phrasea:
-        image: alchemyfr/fake-phrasea:${DOCKER_TAG}
+        image: alchemy-fr/fake-phrasea:${DOCKER_TAG}
         build:
             target: fake-phrasea
             context: ./
