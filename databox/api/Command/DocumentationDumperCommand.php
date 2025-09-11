@@ -16,10 +16,14 @@ class DocumentationDumperCommand extends Command
 
         $filesystem = new Filesystem();
 
-        $destination = Path::join(__DIR__, '../../../doc/_generatedDoc');
-        $filesystem->mkdir($destination);
+        $source = Path::join(__DIR__, '../_preGeneratedDoc');
+        $destination = Path::join(__DIR__, '../doc');
 
-        $filesystem->mirror(Path::join(__DIR__, '../mdFile'), $destination);
+
+        $filesystem->copy("$source/Databox-api_dynamic.md", "$destination/Databox-api_dynamic.md", true);
+        $filesystem->mirror("$source/Databox/Api/", "$destination/Databox/Api/");
+        $filesystem->mirror("$source/Databox/Attributes/", "$destination/Databox/Attributes/");
+        $filesystem->mirror("$source/Databox/Renditions/", "$destination/Databox/Renditions/");
 
         file_put_contents(Path::join($destination, 'STAMP.md'), date(DATE_ATOM));
 
