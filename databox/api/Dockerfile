@@ -19,4 +19,4 @@ WORKDIR /srv/app
 
 RUN ["php", "databox/api/application.php", "app:documentation:dump" ]
 
-CMD ["/bin/bash"]
+CMD ["php-fpm"]
