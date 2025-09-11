@@ -15,3 +15,4 @@ from the images on **aws ecr**
 # fusion
 
 the documentation builder will fusion each "application" doc directory to the general one.
+
