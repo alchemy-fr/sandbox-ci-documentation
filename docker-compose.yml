@@ -6,10 +6,10 @@ networks:
                 - subnet: 174.30.0.0/16
 
 services:
-    fake-phrasea:
-        image: ${REGISTRY_NAMESPACE}fake-databox-api-nginx:${DOCKER_TAG}
+    fake-databox-api-php:
+        image: ${REGISTRY_NAMESPACE}fake-databox-api-php:${DOCKER_TAG}
         build:
-            target: fake-databox-api-nginx
+            target: fake-databox-api-php
             context: ./
             dockerfile: ./databox/api/Dockerfile
         networks:
