@@ -25,15 +25,15 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Start services
-        run: docker compose up -d fake-phrasea --wait
+        run: docker compose up -d fake-databox-api-nginx --wait
 
       - name: install dependencies
         run: |
-          docker compose exec -T fake-phrasea sh -c "cd databox/api && composer install"
+          docker compose exec -T fake-databox-api-nginx sh -c "cd databox/api && composer install"
 
       - name: export doc
         run: |
-          docker compose exec -T fake-phrasea sh -c "php databox/api/application.php app:documentation:dump"
+          docker compose exec -T fake-databox-api-nginx sh -c "php databox/api/application.php app:documentation:dump"
 
       - uses: docker/setup-qemu-action@v2
       - uses: docker/setup-buildx-action@v2
@@ -46,7 +46,7 @@ jobs:
           provenance: false
           push: true
           tags: |
-            ${{ env.REGISTRY_NAMESPACE }}fake-phrasea:${{ github.ref_name }}
+            ${{ env.REGISTRY_NAMESPACE }}fake-databox-api-nginx:${{ github.ref_name }}
 
       - name: Trigger Workflow in documentation builder Repository
         run: |

@@ -7,9 +7,9 @@ networks:
 
 services:
     fake-phrasea:
-        image: ${REGISTRY_NAMESPACE}fake-phrasea:${DOCKER_TAG}
+        image: ${REGISTRY_NAMESPACE}fake-databox-api-nginx:${DOCKER_TAG}
         build:
-            target: fake-phrasea
+            target: fake-databox-api-nginx
             context: ./
             dockerfile: ./databox/api/Dockerfile
         networks:
