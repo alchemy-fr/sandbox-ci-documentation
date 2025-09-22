@@ -22,6 +22,7 @@ class DocumentationDumperCommand extends Command
         $source = Path::join(__DIR__, '../_preGeneratedDoc');
         $destination = Path::join(__DIR__, '../doc');
 
+
         $filesystem->copy("$source/Databox-api_dynamic.md", "$destination/Databox-api_dynamic.md", true);
         $filesystem->mirror("$source/Databox/Api/", "$destination/Databox/Api/");
         $filesystem->mirror("$source/Databox/Attributes/", "$destination/Databox/Attributes/");
