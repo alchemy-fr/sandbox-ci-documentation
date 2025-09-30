@@ -23,9 +23,9 @@ class DocumentationDumperCommand extends Command
         $destination = Path::join(__DIR__, '../doc');
 
         $filesystem->copy("$source/Databox-api_dynamic.md", "$destination/Databox-api_dynamic.md", true);
-        $filesystem->mirror("$source/Databox/Api/", "$destination/Databox/Api/");
-        $filesystem->mirror("$source/Databox/Attributes/", "$destination/Databox/Attributes/");
-        $filesystem->mirror("$source/Databox/Renditions/", "$destination/Databox/Renditions/");
+        $filesystem->mirror("$source/Api/", "$destination/Api/");
+        $filesystem->mirror("$source/Attributes/", "$destination/Attributes/");
+        $filesystem->mirror("$source/Renditions/", "$destination/Renditions/");
 
         file_put_contents(Path::join($destination, 'STAMP.md'), date(DATE_ATOM));
 
@@ -33,5 +33,4 @@ class DocumentationDumperCommand extends Command
 
         return Command::SUCCESS;
     }
-
 }
