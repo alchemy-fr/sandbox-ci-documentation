@@ -21,14 +21,7 @@ class DocumentationDumperCommand extends Command
 
         $source = Path::join(__DIR__, '../_preGeneratedDoc');
         $destination = Path::join(__DIR__, '../doc');
-
-        $filesystem->copy("$source/Databox-api_dynamic.md", "$destination/Databox-api_dynamic.md", true);
-        $filesystem->mirror("$source/Api/", "$destination/Api/");
-        $filesystem->mirror("$source/Attributes/", "$destination/Attributes/");
-        $filesystem->mirror("$source/Renditions/", "$destination/Renditions/");
-
-        file_put_contents(Path::join($destination, 'STAMP.md'), date(DATE_ATOM));
-
+        $filesystem->mirror("$source/", "$destination/");
         $output->writeln("databox-api/doc dynamic files generated");
 
         return Command::SUCCESS;
